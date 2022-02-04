@@ -1,24 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="kbq-Lg-15B">
+            <objects>
+                <viewController id="U1C-qq-P4b" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dez-Dz-dc1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TKs-70-X1L"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jOc-E9-2gk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1270" y="502"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="J5e-Eg-FLS">
+            <objects>
+                <viewController id="SFH-6O-yGJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="39l-hw-W38">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="21f-f0-CgV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L1b-Fi-auw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1250" y="-247"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FastMail" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lasso" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ARK-QK-11G" userLabel="Liked Templates">
+                                <rect key="frame" x="0.0" y="129" width="198" height="296"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hWA-eG-jBR" appends="YES" id="3VI-Zl-3ew"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paperplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tFV-8T-fMp">
+                                <rect key="frame" x="247" y="482" width="150" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="imO-cH-5Sf" appends="YES" id="mPG-GX-vnE"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="externaldrive.badge.minus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ni4-c4-bqQ">
+                                <rect key="frame" x="20" y="482" width="150" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1hN-9b-82C" appends="YES" id="oao-T6-0dl"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trash.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Jd2-XG-I8M">
+                                <rect key="frame" x="247" y="129" width="150" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="g8f-nb-p5m" appends="YES" id="IN5-c9-j7b"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="questionmark.folder.fill.ar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9OR-C5-wJ4">
+                                <rect key="frame" x="247" y="308" width="150" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1TY-Y9-oxj" appends="YES" id="EB1-oe-DTz"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tray.full.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="izh-qf-pif">
+                                <rect key="frame" x="87" y="678" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UPR-Ry-E8i" appends="YES" id="9OJ-mW-zG7"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="imO-cH-5Sf" userLabel="inboxTap">
+                    <connections>
+                        <segue destination="vfu-4d-Zom" kind="custom" id="lkc-vm-YDU"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="1hN-9b-82C" userLabel="newTempTap">
+                    <connections>
+                        <segue destination="U1C-qq-P4b" kind="custom" id="OVT-yH-oEI"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="g8f-nb-p5m" userLabel="contactsTap">
+                    <connections>
+                        <segue destination="vDY-1U-pT4" kind="show" id="JAY-9j-EzE"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="1TY-Y9-oxj" userLabel="queryTap">
+                    <connections>
+                        <segue destination="ZHI-Qc-RWQ" kind="show" id="Hbm-pB-FxD"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="UPR-Ry-E8i">
+                    <connections>
+                        <segue destination="nEu-C1-k2B" kind="custom" id="5pA-QM-McJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="hWA-eG-jBR" userLabel="likedTempTap">
+                    <connections>
+                        <segue destination="SFH-6O-yGJ" kind="custom" id="byD-AI-xQv"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1EE-Iv-O43">
+            <objects>
+                <viewController id="ZHI-Qc-RWQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V0e-7S-QBE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="QNu-iG-uzd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="c1h-Vx-um2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3C-v0-H3I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="64"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1GA-n7-Bdp">
+            <objects>
+                <viewController id="nEu-C1-k2B" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XPe-P0-PJR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rav-Yf-X8D"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G77-gm-2ae" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="985"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZSb-Fm-bMG">
+            <objects>
+                <viewController id="vfu-4d-Zom" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5sq-zp-EyN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DzF-za-150"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O4i-jZ-Lqe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="794"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eJy-jT-LNd">
+            <objects>
+                <viewController id="vDY-1U-pT4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p7F-2s-x7c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rFC-OX-ks2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lcw-SW-AKV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGH-76-dG4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="-744"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="externaldrive.badge.minus" catalog="system" width="128" height="92"/>
+        <image name="lasso" catalog="system" width="128" height="118"/>
+        <image name="paperplane" catalog="system" width="128" height="118"/>
+        <image name="questionmark.folder.fill.ar" catalog="system" width="128" height="97"/>
+        <image name="trash.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="tray.full.fill" catalog="system" width="128" height="88"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

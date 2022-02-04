@@ -8,3 +8,4 @@ This project will help manage the inbox of people who recceive a large volume of
 * bulk delete, move, filter, flag emails
 * Wide variety of premade and custom reply templates
 * Easily share account between authorized users
+* Painlessly unsubscribe from mailing lists
